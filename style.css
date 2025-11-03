@@ -17,8 +17,6 @@ li{
 
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 100dvh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,28 +26,33 @@ body{
     flex-direction: column;
     background-color: #1D1F1F;
     width: 5%;
-    height: 100%;
+    height: auto;
+    justify-content: space-between;
     align-items: center;
-    gap: 1250px;
 }
 
 .icons-top {
     margin-top: 30px;
-    display:flex;
-    width: 35px;
-    height: 35px;
     display: flex;
     flex-direction: column;
    gap: 20px;
 }
 
-.icons-bottom{
-    display:flex;
+.icons-top img{
     width: 35px;
     height: 35px;
-    display: flex;
+}
+
+.icons-bottom{
+    display:flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 30px;
+}
+
+.icons-bottom img{
+    width: 35px;
+    height: 35px;
 }
 
 .main-section{
@@ -70,6 +73,7 @@ body{
 }
 
 .main-section h1{
+    margin-left: 40px;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -84,20 +88,31 @@ body{
     height: 35px;
 }
 
+.search-input{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+
 .search-input input{
-    width: 600px;
+    width: 90%;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 40px;
     background-color: #2E2F2F;
     background-image: url(./img/material-symbols_search-rounded.svg);
     background-repeat: no-repeat;
+    background-position: 15px center;
     text-align: center;
+    font-size: 24px;
     color: #ABACAC;
+    margin-left: 40px;
 }
 
 .botoes {
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 60px;
     gap: 20px;
     align-items: center;
@@ -108,31 +123,70 @@ body{
 
 .botoes ul{
     display: flex;
+    font-size: 12px;
     width: 100%;
-    height: 50px;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     border: #ABACAC;
     gap: 40px;
-    margin-left: 40px;
-
 }
 
 .botoes li{
-    width: 50px;
-    height: 50px;
+    background-color: #103529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
     border: 1px solid #2E2F2F;
-    border-radius: 10px;
+    border-radius: 20px;
+    font-size: 16px;
 }
 
 .side-section{
     width: 60%;
     display: flex;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: aqua;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato{
+    width: 85%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contato img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.contato h3{
+    color: white;
+}
+
+.contato p{
+    color: #ABACAC;
+    font-size: small;
 }
 
 .side-section img{
     width: 100%;
+    height: auto;
 }
